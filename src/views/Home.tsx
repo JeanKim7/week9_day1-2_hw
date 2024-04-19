@@ -8,6 +8,7 @@ export default function Home(){
 
     const[incompleteTasks, setIncompleteTasks] = useState<TaskType[]>([])
     const[completeTasks, setCompleteTasks] = useState<TaskType[]>([])
+    const[tasks, setTasks]= useState<TaskType[]>([...incompleteTasks, ...completeTasks])
 
     const addNewTask = (newTaskData: TaskFormDataType) => {
         const newTask: TaskType = {...newTaskData, id:incompleteTasks.length+completeTasks.length+1, createdAt: new Date().toString(), completed:false}
