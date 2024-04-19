@@ -32,7 +32,7 @@ export default function TaskForm({ addNewTask}: TaskFormProps) {
                 <Form.Control name="description" placeholder='Enter new task description' value = {newTask.description} onChange={handleInputChange}></Form.Control>
                 <Form.Label>Task Due Date</Form.Label>
                 <Form.Control name="dueDate" placeholder='Enter new task dueDate' value = {newTask.dueDate} onChange={handleInputChange}></Form.Control>
-                <Button variant='success' type='submit'>Create Post</Button>
+                <Button variant='success' type='submit'>Create Task</Button>
             </Form>
         </Card.Body>
     </Card>
